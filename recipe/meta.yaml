@@ -22,7 +22,7 @@ requirements:
 
 test:
   commands:
-    - ark --help
+    - ark --version
 
 about:
   home: https://github.com/posit-dev/ark
