@@ -22,7 +22,7 @@ requirements:
 
 test:
   commands:
-    - ark --version
+    - ark --help 2>&1 | grep -q "A connection file must be specified."
 
 about:
   home: https://github.com/posit-dev/ark
