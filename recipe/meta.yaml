@@ -1,5 +1,5 @@
 {% set name = "ark" %}
-{% set version = "0.1.146" %}
+{% set version = "0.1.147" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/posit-dev/ark/archive/{{ version }}.tar.gz
-  sha256: bb9691ec3259d008fc711a12b46ae1b73a4df98d7c0a316afc906119dcffaf7c
+  sha256: e95c58bff548c9b261db87c3cb0a444f6029a5135781ba21016b007120b9ab70
 
 build:
   number: 0
