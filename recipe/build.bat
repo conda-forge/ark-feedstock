@@ -1,3 +1,6 @@
+export CARGO_PROFILE_RELEASE_STRIP=symbols
+export CARGO_PROFILE_RELEASE_LTO=fat
+
 :: check licenses
 cargo-bundle-licenses --format yaml --output THIRDPARTY.yml || goto :error
 
