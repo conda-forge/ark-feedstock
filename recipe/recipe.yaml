@@ -1,5 +1,5 @@
 context:
-  version: "0.1.188"
+  version: "0.1.189"
 
 package:
   name: ark
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/posit-dev/ark/archive/${{ version }}.tar.gz
-  sha256: 47b72180628d0effba2a882757a89757f5ce64ba2893278cef04c2616e302848
+  sha256: 835f5c157ae9c8d29f0039c89280daa931001be3d580c29cb3df493c042bd94a
 
 build:
   number: 0
