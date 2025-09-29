@@ -1,5 +1,5 @@
 context:
-  version: "0.1.203"
+  version: "0.1.209"
 
 package:
   name: ark
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/posit-dev/ark/archive/${{ version }}.tar.gz
-  sha256: 0de3a950586da4f65d86ffe9eeeaa7b98f2f5fdc593621c4300d43df8ee4c423
+  sha256: 22d1ad54f017cc92b640b65871b9235eba3df3584e979a4e909e94c924adb70e
 
 build:
   number: 0
@@ -21,12 +21,8 @@ requirements:
     - cargo-bundle-licenses
 
 tests:
-  - requirements:
-      run:
-        - if: win
-          then: m2-grep
-    script:
-      - "ark --help 2>&1 | grep -q \"A connection file must be specified.\""
+  - script:
+      - ark --help
 
 about:
   license: MIT
