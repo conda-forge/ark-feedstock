@@ -1,6 +1,8 @@
 set CARGO_PROFILE_RELEASE_STRIP=symbols
 set CARGO_PROFILE_RELEASE_LTO=fat
 
+git config --system core.longpaths true || goto :error
+
 :: check licenses
 cargo-bundle-licenses --format yaml --output THIRDPARTY.yml || goto :error
 
